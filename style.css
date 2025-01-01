@@ -1,0 +1,196 @@
+/* *****************
+
+BASIC SETUP
+
+*******************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    background-color: white;
+    color: rgb(2, 2, 2);
+}
+
+.clearfix::after{
+    content: ' ';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* *****************
+
+REUSABLE COMPONENTS
+
+*******************/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* 
+HEADING
+*/
+
+h1,h2{
+ font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 1px;
+
+}
+
+h1{
+    color: white;
+    font-size: 200%;
+    word-spacing: 4px;
+}
+
+h2{
+font-size: 180%;
+word-spacing: 2px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+h2::after{
+display: block;
+height: 2px;
+background-color: #23b9ff;
+content: "";
+width: 100px;
+margin: 0 auto;
+margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/******************
+
+BUTTONS
+
+*******************/
+.btn{
+    display: inline-block;
+    margin: 10px;
+    margin-top: 30px;
+    border: 1px solid #23b9ff;
+    padding: 10px 30px;
+    border-radius: 200px;
+    text-decoration: none;
+    color: white;
+    transform: translate(-7%,-50%);
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"]{
+    background-color: #23b9ff;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #23b9ff;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type="submit"]{
+    border: 1px solid #23b9ff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+color: #ffffff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #23b9ff;
+    color: white;
+}
+
+/******************
+
+HEADER
+
+*******************/
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(resources/imgs/b1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box{
+    width: 1140px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin: 20px;
+}
+
+.logo-black{
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 10px;
+    display: none;
+}
+
+.main-nav{
+     float: right;
+     list-style: none;
+     margin: 60px;
+}
+
+.main-nav li{
+ display: inline-block;   
+ margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 90%;
+    padding-bottom: 8px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #23b9ff;
+}
