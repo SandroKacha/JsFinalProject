@@ -194,3 +194,300 @@ header{
 .main-nav li a:active{
     border-bottom: 2px solid #23b9ff;
 }
+
+/*******************
+
+STICK NAV MENU
+
+*******************/
+
+.stick{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 2px whitesmoke;
+    z-index: 9999;
+}
+
+.stick .main-nav{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.stick .main-nav li a:link,
+.stick .main-nav li a:visited{
+    color: #333;
+}
+
+.stick .logo{
+    display: none;
+}
+
+.stick .logo-black{
+    display: block;
+}
+
+
+/*******************
+
+SECTION-FEATURS
+
+*******************/
+
+.AllSections{
+     display: flex;
+    
+    
+}
+
+section{
+    padding: 20px 50px 100px ;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big{
+    font-size: 300%;
+    display: block;
+    color: #23b9ff;
+    margin: 20px;
+}
+
+
+/*******************
+
+SCROLL
+
+*******************/
+.scroll{
+    background-color: #cad2e2;
+    height: 700px;
+}
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img{
+    width: 250px;
+    height: 400px;
+    
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.section-steps{
+    background-color: #e4e4e4;
+}
+
+.steps-box{
+    margin-top: 30px;
+}
+
+.steps-box:first-child{
+text-align: right;
+padding: 3%;
+
+}
+
+.steps-box:last-child{
+padding: 3%;
+}
+
+.app-screen{
+    width: 250px;
+}
+
+.work-step div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #23b9ff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 6px;
+    font-size: 150%;
+    float: left;
+    margin-right: 10px;
+}
+
+.work-step{
+    margin-top: 50px;
+}
+
+.btn-app{
+    text-decoration: none;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-top: 20px;
+}
+
+
+.Phone_Section{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(resources/imgs/g2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+blockquote{
+    padding: 20px;
+    font-style: italic;
+    line-height: 145%;
+    border: #cf711e 2px;
+    position: relative;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.City_Build{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.City_Img{
+    width: 250px;
+}
+/*******************
+
+SIGN-UP
+
+*******************/
+.Person_Build{
+    display: flex;
+}
+.section-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price-meal{
+    font-size:80%;
+}
+
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box div:first-child{
+    background-color: #e7e0e0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+}
+
+.All_Offers{
+    display: flex;
+    padding-left: 100px;
+}
+
+.Offer_1{
+    width: 400px;
+}
+
+.Longer{
+    height: 245px;
+}
