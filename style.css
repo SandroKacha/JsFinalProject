@@ -383,7 +383,7 @@ blockquote{
     padding: 20px;
     font-style: italic;
     line-height: 145%;
-    border: #cf711e 2px;
+    border: #6fd6ff 2px;
     position: relative;
 }
 
@@ -432,7 +432,7 @@ SIGN-UP
 }
 
 .plan-box{
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -442,14 +442,14 @@ SIGN-UP
 
 .plan-box div{
     padding: 15px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #a4f1fc;
 }
 
 .plan-price{
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
-    color: #e67e22;
+    color: #78b0e6;
 }
 
 .plan-price-meal{
@@ -470,7 +470,7 @@ SIGN-UP
 }
 
 .plan-box div:first-child{
-    background-color: #e7e0e0;
+    background-color: #6be9ff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -490,4 +490,76 @@ SIGN-UP
 
 .Longer{
     height: 245px;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type="checkbox"]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+/*******************
+
+FOOTER
+
+*******************/
+
+footer{
+    background-color: #333;
+    padding-top: 60px;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-icons{
+    list-style: none;
+    float: right;
+    
+}
+
+.social-icons li ion-icon{
+    color:#23b9ff;
+}
+
+.footer-nav li,
+.social-icons li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+footer p{
+    color: #ccc;
+    text-align: center;
+    font-size: 90%;
+    padding-bottom: 20px;
+    margin-top: 25px;
 }
