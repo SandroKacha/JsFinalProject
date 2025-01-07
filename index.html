@@ -245,84 +245,53 @@
         </div>
     </section>
     
-    <section class="section-form">
-        <div class="row">
-            <h2>We're happy to hear from you</h2>
-        </div>
-        <div class="row">
-            <form action="#" method="post" class="contact-form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input
-                         type="text"
-                         name="name"
-                         id="name"
-                         placeholder="Your Name"
-                         required
-                         />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="Email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input
-                         type="email"
-                         name="Email"
-                         id="Email"
-                         placeholder="Your Email"
-                         required
-                         />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="find-us">How Did You Find Us</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
-                            <option value="Friends">Friends</option>
-                            <option value="Search">Search</option>
-                            <option value="AD">Advertisement</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Newsletter</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="checkbox" name="news" id="news" cracked required /> Yes 
-                        Please
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>Drop us a line</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="Message" placeholder="Your Message"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label>&nbsp;</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="submit" value="Send It !">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
+    <div class="container">
+        <form  id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control" >
+                <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                    <input  id="email" placeholder="Enter email">
+                    <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="Enter password again">
+                    <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="">Phone Number</label>
+                    <input type="text" id="Number" placeholder="Enter phone Number">
+                    <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="">Country</label>
+                    <input type="text" id="Country" placeholder="Enter your country">
+                    <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="">City</label>
+                    <input type="text" id="City" placeholder="Enter your City">
+                    <small>Error message</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    
+
     <footer>
         <div class="row">
-         <div class="col span-1-of-2">
+         <div class="">
             <ul class="footer-nav">
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Blog</a></li>
@@ -331,7 +300,7 @@
                 <li><a href="#">Android App</a></li>
             </ul>
          </div>
-            <div class="col span-1-of-2">
+            <div class="">
                 <ul class="social-icons">
                     <li>
                         <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
@@ -355,6 +324,7 @@
     </footer>
 
     <script src="scroll.js"></script>
+    <script src="password.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
