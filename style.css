@@ -17,6 +17,7 @@ html{
     text-rendering: optimizeLegibility;
     background-color: white;
     color: rgb(2, 2, 2);
+    scroll-behavior: smooth;
 }
 
 .clearfix::after{
@@ -94,6 +95,27 @@ BUTTONS
     transform: translate(-7%,-50%);
 }
 
+.langDiv{
+    display: flex;
+    justify-content: end;
+}
+
+.btnlang{
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    border-radius: 200px;
+    text-decoration: none;
+    color: white;
+    background-color: #23b9ff;
+    margin-top: 20px;
+    justify-content: end;
+    
+}
+
+.btnlang:hover{
+    cursor: pointer;
+}
+
 .btn:link,
 .btn:visited,
 input[type="submit"]{
@@ -132,6 +154,8 @@ color: #ffffff;
     background-color: #23b9ff;
     color: white;
 }
+
+
 
 /******************
 
