@@ -46,6 +46,14 @@ const Element44 = document.getElementById('Ttext43');
 const Element45 = document.getElementById('Ttext44');
 const Element46 = document.getElementById('Ttext45');
 const Element47 = document.getElementById('Ttext46');
+const Element48 = document.getElementById('Ttext47');
+const Element49 = document.getElementById('Ttext48');
+const Element50 = document.getElementById('Ttext49');
+const Element51 = document.getElementById('Ttext50');
+const Element52 = document.getElementById('Ttext51');
+const Element53 = document.getElementById('Ttext52');
+const Element54 = document.getElementById('Ttext53');
+
 
 
 const translations = {
@@ -97,6 +105,14 @@ const translations = {
         "Ttext44": "Comments",
         "Ttext45": "Subscribe",
         "Ttext46": "Sign up",
+        "Ttext47": "Username",
+        "Ttext48": "Email",
+        "Ttext49": "Password",
+        "Ttext50": "Confirm Password",
+        "Ttext51": "Phone Number",
+        "Ttext52": "City",
+        "Ttext53": "Country"
+
         
  
     },
@@ -148,12 +164,14 @@ const translations = {
             "Ttext43": "შეთავაზებები",
             "Ttext44": "კომენტარები",
             "Ttext45": "გამოწერა",
-            "Ttext46": "რეგისტრაცია"
-
-
-
-
-
+            "Ttext46": "რეგისტრაცია",
+            "Ttext47": "მომხმარებლის სახელი",
+            "Ttext48": "ელფოსტა",
+            "Ttext49": "პაროლი",
+            "Ttext50": "დაადასტურეთ პაროლი",
+            "Ttext51": "ტელეფონის ნომერი",
+            "Ttext52": "ქვეყანა",
+            "Ttext53": "ქალაქი"
 
         }
         
@@ -210,6 +228,15 @@ function changeLanguage(language) {
     Element45.textContent = translation.Ttext44;
     Element46.textContent = translation.Ttext45;
     Element47.textContent = translation.Ttext46;
+    Element48.textContent = translation.Ttext47;
+    Element49.textContent = translation.Ttext48;
+    Element50.textContent = translation.Ttext49;
+    Element51.textContent = translation.Ttext50;
+    Element52.textContent = translation.Ttext51;
+    Element53.textContent = translation.Ttext52;
+    Element54.textContent = translation.Ttext53;
+
+
 }
 
 languageButtons.addEventListener('click', (e) => {

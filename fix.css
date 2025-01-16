@@ -1,0 +1,173 @@
+
+
+@media only screen and (max-width: 1023px){
+    body{
+        font-size: 15px;
+    }
+    .hero-text-box{
+        padding: 0 2%;
+        width: 100%;
+    }
+
+   .main-nav{
+        display: grid;
+        
+   }
+   
+   #navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 10;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+
+#navbar .main-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#navbar.scrolled .main-nav .nav-link {
+    color: black;
+}
+
+
+.logo-black {
+    display: none;
+}
+
+#navbar.scrolled .logo {
+    display: none;
+}
+
+#navbar.scrolled .logo-black {
+    display: block;
+}
+
+#navbar.scrolled .main-nav{
+    display: inline-block;
+    margin-top: -65px;
+}
+
+   .main-nav li{
+    padding: 10px;
+   }
+    .row{
+        padding: 0 2%;
+    }    
+    section{
+        padding: 50px 0px;
+    }
+
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .icon-big{
+        font-size: 30px;
+    }
+
+    .icon-small{
+        width: 15px;
+    }
+
+    .city-features{
+        font-size: 90%;
+    }
+
+    .plan-box{
+        width: 100%;
+        margin-left: 0mm;
+    }
+
+    .work-steps{
+        margin-top: 40px;
+    }
+
+    .app-screen{
+        width: 50%;
+    }
+
+    .btn-app img{
+        width: 120px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .footer-nav li{
+        margin-right: 8px;
+    }
+
+    .contact-form{
+        width: 80%;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .AllSections {
+        display: block;
+    }
+    
+    .row {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+    .main-nav {
+        margin: 40px 0;
+    }
+    .main-nav li {
+        margin-left: 20px;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 160%;
+    }
+    .long-copy {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .gallery div img {
+        width: 200px;
+        height: auto;
+    }
+    .City_Img {
+        width: 200px;
+    }
+    .Phone_Section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .steps-box:first-child,
+    .steps-box:last-child {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 812px) and (orientation: landscape) {
+    header {
+        height: 50vh;
+    }
+    .btn {
+        padding: 8px 15px;
+    }
+    .main-nav li {
+        margin-left: 10px;
+    }
+}

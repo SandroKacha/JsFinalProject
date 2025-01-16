@@ -171,7 +171,6 @@ header{
 }
 
 .hero-text-box{
-    width: 1140px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -214,8 +213,8 @@ header{
     padding-bottom: 8px;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active{
+.main-nav li a p:hover,
+.main-nav li a p:active{
     border-bottom: 2px solid #23b9ff;
 }
 
@@ -630,23 +629,31 @@ form{
 }
 
 
+.picone{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.pictwo{
+    box-shadow: rgba(0, 128, 0, 0.4) 5px 5px, 
+            rgba(0, 128, 0, 0.3) 10px 10px, 
+            rgba(0, 128, 0, 0.2) 15px 15px, 
+            rgba(0, 128, 0, 0.1) 20px 20px, 
+            rgba(0, 128, 0, 0.05) 25px 25px;
+}
+
+.pic3{
+    box-shadow: rgba(0, 255, 255, 0.4) 5px 5px, 
+            rgba(0, 255, 255, 0.3) 10px 10px, 
+            rgba(0, 255, 255, 0.2) 15px 15px, 
+            rgba(0, 255, 255, 0.1) 20px 20px, 
+            rgba(0, 255, 255, 0.05) 25px 25px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Img_txt{
+    color: white;
+    padding-top: 20px;
+}
 /*******************
 
 FOOTER
@@ -692,3 +699,42 @@ footer p{
     margin-top: 25px;
 }
 
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 10;
+}
+
+#navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 150px;
+}
+
+#navbar .main-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#navbar.scrolled .main-nav .nav-link {
+    color: black;
+}
+
+
+.logo-black {
+    display: none;
+}
+
+#navbar.scrolled .logo {
+    display: none;
+}
+
+#navbar.scrolled .logo-black {
+    display: block;
+}

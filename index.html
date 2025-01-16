@@ -7,29 +7,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fix.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-         <div class="row">
-            <img src="resources/imgs/l.png" alt="Logo" class="logo">
-            <img src="resources/imgs/l2.png" alt="Logo" class="logo-black">
-            <ui class="main-nav">
-                <li><a href="#LinkSec">  <p id="Ttext41">Info</p></a></li>
-                <li><a href="#LinkSec1"> <p id="Ttext42"> Products</p></a></li>
-                <li><a href="#LinkSec2"> <p id="Ttext43"> Offers</p></a></li>
-                <li><a href="#LinkSec3"> <p id="Ttext44"> Comments</p></a></li>
-                <li><a href="#LinkSec4"> <p id="Ttext45"> Subscribe</p></a></li>
-                <li><a href="#LinkSec5"> <p id="Ttext46"> Sign up</p></a></li>
-                <div class="langDiv">
-                    <li><button class="btnlang" data-lang="en">Eng</button></li>
-                    <li><button class="btnlang" data-lang="ge">Geo</button></li>
-                </div>
-            </ui>
-         </div>
-        </nav>   
+        <nav id="navbar">
+            <div class="row">
+                <img src="resources/imgs/l.png" alt="Logo" class="logo">
+                <img src="resources/imgs/l2.png" alt="Logo" class="logo-black hidden">
+                <ul class="main-nav">
+                    <li><a href="#LinkSec" class="nav-link" ><p id="Ttext41">Info</p></a></li>
+                    <li><a href="#LinkSec1" class="nav-link"><p id="Ttext42">Products</p></a></li>
+                    <li><a href="#LinkSec2" class="nav-link"><p id="Ttext43">Offers</p></a></li>
+                    <li><a href="#LinkSec3" class="nav-link"><p id="Ttext44">Comments</p></a></li>
+                    <li><a href="#LinkSec4" class="nav-link"><p id="Ttext45">Subscribe</p></a></li>
+                    <li><a href="#LinkSec5" class="nav-link"><p id="Ttext46">Sign up</p></a></li>
+                    <div class="langDiv">
+                        <li><button class="btnlang" data-lang="en">Eng</button></li>
+                        <li><button class="btnlang" data-lang="ge">Geo</button></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>  
         
     <div class="hero-text-box">
         <h1 id="Ttext">
@@ -88,25 +89,57 @@
 
     </section > 
 
-    <section class="scroll" id="LinkSec1">
-        <div class="gallery-wrap">
-            <img id="backBtn" src="resources/imgs/A_L.png" alt="">
-            <div class="gallery">
-                <div>
-                    <span><img src="resources/imgs/img1.jpg" alt=""></span>
-                    <span><img src="resources/imgs/img2.jpg" alt=""></span>
-                    <span><img src="resources/imgs/img3.jpg" alt=""></span>
-                </div>
-                <div>
-                    <span><img src="resources/imgs/img4.jpg" alt=""></span>
-                    <span><img src="resources/imgs/img5.jpg" alt=""></span>
-                    <span><img src="resources/imgs/img6.jpg" alt=""></span>
-                </div>
+<section class="scroll" id="LinkSec1">
+    <div class="gallery-wrap">
+        <img id="backBtn" src="resources/imgs/A_L.png" alt="Back">
+        <div class="gallery">
+            <div>
+                <span>
+                    <img src="resources/imgs/img1.jpg" alt="Image 1" class="picone">
+                    <p class="Img_txt">KeyBoards</p>
+                </span>
+                <span>
+                    <img src="resources/imgs/img2.jpg" alt="Image 2" class="pictwo">
+                    <p class="Img_txt">Mouses</p>
+                </span>
+                <span>
+                    <img src="resources/imgs/img3.jpg" alt="Image 3" class="pic3">
+                    <p class="Img_txt">HeadPhones</p>
+                </span>
             </div>
-            <img id="nextBtn" src="resources/imgs/A_R.png" alt="">
+            <div>
+                <span>
+                    <img src="resources/imgs/img4.jpg" alt="Image 4" class="picone">
+                    <p class="Img_txt">Microphones</p>
+                </span>
+                <span>
+                    <img src="resources/imgs/img5.jpg" alt="Image 5" class="pictwo">
+                    <p class="Img_txt">GamingChairs</p>
+                </span>
+                <span>
+                    <img src="resources/imgs/img6.jpg" alt="Image 6" class="pic3">
+                    <p class="Img_txt">MousePads </p>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <img src="resources/imgs/img7.jpg" alt="Image 4" class="picone">
+                    <p class="Img_txt">Built PC's</p>
+                </span>
+                <span>
+                    <img src="resources/imgs/img8.jpg" alt="Image 5" class="pictwo">
+                    <p class="Img_txt">Rams</p>
+                </span>
+                <span>
+                    <img src="resources/imgs/img9.webp" alt="Image 6" class="pic3">
+                    <p class="Img_txt">Coolers </p>
+                </span>
+            </div>
         </div>
+        <img id="nextBtn" src="resources/imgs/A_R.png" alt="Next">
+    </div>
+</section>
 
-    </section>
 
     <section class="section-steps">
         <div class="row">
@@ -255,38 +288,38 @@
         <form  id="form" class="form">
             <h2>Register With Us</h2>
             <div class="form-control" >
-                <label for="username">Username</label>
+                <label for="username"><p id="Ttext47">Username</p> </label>
                     <input type="text" id="username" placeholder="Enter Username">
                     <small></small>
             </div>
             <div class="form-control">
-                <label for="email">Email</label>
+                <label for="email"><p id="Ttext48">Email</p></label>
                     <input  id="email" placeholder="Enter email">
                     <small></small>
             </div>
             <div class="form-control">
-                <label for="password">Password</label>
+                <label for="password"><p id="Ttext49">Password</p></label>
                     <input type="password" id="password" placeholder="Enter password">
                     <small></small>
             </div>
             <div class="form-control">
-                <label for="password2">Confirm Password</label>
+                <label for="password2"> <p id="Ttext50">Confirm Password</p></label>
                     <input type="password" id="password2" placeholder="Enter password again">
                     <small></small>
             </div>
             <div class="form-control">
-                <label for="">Phone Number</label>
+                <label for=""><p id="Ttext51">Phone Number</p></label>
                     <input type="text" id="Number" placeholder="Enter phone Number">
                     <small></small>
-            </div>
+            </div> 
 
             <div class="form-control">
-                <label for="">Country</label>
+                <label for=""><p id="Ttext52">Country</p></label>
                     <input type="text" id="Country" placeholder="Enter your country">
                     <small></small>
             </div>
             <div class="form-control">
-                <label for="">City</label>
+                <label for=""><p id="Ttext53">City</p></label>
                     <input type="text" id="City" placeholder="Enter your City">
                     <small></small>
             </div>
@@ -332,6 +365,7 @@
     <script src="scroll.js"></script>
     <script src="password.js"></script>
     <script src="language.js"></script>
+    <script src="navscroll.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
